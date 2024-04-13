@@ -5,7 +5,7 @@ body {
   font-family: 'Open Sans';
   font-size: 1.3em;
   padding: 0;
-  margin: 0;
+  margin: 0px;
   
 }
 a {
@@ -38,6 +38,8 @@ a {
 .content {
   padding-top: 52px;
    background: White;
+    margin: 0px; /* Center the content horizontally */
+
 }
 .anchor {
   display: block; /*this is important!*/
@@ -106,6 +108,7 @@ a {
   color: White;
 }
 footer {
+  
   min-height: 200px;
   padding: 100px;
   background: Black;
@@ -182,12 +185,14 @@ footer p {
 
 
 .content {
-  margin: 0 auto; /* Center the content horizontally */
+  margin: 0px; /* Center the content horizontally */
   max-width: 900px; /* Set maximum width of content */
-  min-width: 650px;
-  padding: 20px; /* Add space on the left and right sides */
-  background-color:Black;
+  min-width: 0px;
+  padding: 0px 0; /* Add space on the top and bottom, no padding on left and right */
+  background-color: black;
+  spacing: 0px;
 }
+
 
 footer {
   margin-top: 0px; /* Add space between content and footer */
@@ -303,6 +308,7 @@ footer {
 .container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
@@ -310,11 +316,13 @@ footer {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+
 }
 
 .column h2 {
   color: White;
-  font-size: 13px;
+  font-size: .8em;
+
   
 }
 
@@ -325,14 +333,16 @@ footer {
 
   .column {
     flex: 1 0 auto;
+    
   }
 }
 
 .paragraph {
-  font-size: 14px;
+ 
+
 }
 .paragraph2 {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -439,7 +449,6 @@ article:hover {
   padding: 15px 0;
   margin: 0;
   font-size: 18px;
-  font-family: "Noticia Text", serif;
   
   color: White;
   border-bottom: 2px solid #eee;
@@ -495,7 +504,6 @@ article:hover {
 .content-container .article-content {
   overflow: hidden;
   text-align: justify;
-  font-family: "Noticia Text", serif;
  color: White;
   padding: 5px; /* Add padding for better readability */
   font-size: 12px; /* Set font size to make the text tiny */
