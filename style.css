@@ -184,7 +184,8 @@ footer p {
 .content {
   margin: 0 auto; /* Center the content horizontally */
   max-width: 900px; /* Set maximum width of content */
-  padding: 0 20px; /* Add space on the left and right sides */
+  min-width: 650px;
+  padding: 20px; /* Add space on the left and right sides */
   background-color:Black;
 }
 
@@ -429,7 +430,7 @@ article:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 92%;
+  width: 70%;
   padding: 0 15px;
 }
 
